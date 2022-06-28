@@ -49,18 +49,6 @@ function App() {
               resolver={register(values['phone'])}
               onFieldChange={onFieldChange}
             />
-            <Field
-              labelText="Enter your phone"
-              fieldType="text"
-              fieldName="cringe"
-              fieldValue={values['cringe']}
-              fieldError={errors['cringe'] ? errors['cringe'] : ''}
-              hasError={errors['cringe']}
-              placeholder="xxx-xxx-xxxx"
-              setErrors={setErrors}
-              resolver={register(values['cringe'])}
-              onFieldChange={onFieldChange}
-            />
           </>
         )}
       </Form>
